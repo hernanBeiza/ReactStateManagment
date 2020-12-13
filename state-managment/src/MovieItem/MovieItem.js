@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import { ListGroupItem, Badge } from 'reactstrap';
 
-const Movie = ({name,price}) => {
+const MovieItem = ({name,price}) => {
 	
 	const verDetalle = () => {
 		console.log("verDetalle");
@@ -15,4 +15,4 @@ const Movie = ({name,price}) => {
 
 }
 
-export default Movie;
+export default MovieItem;

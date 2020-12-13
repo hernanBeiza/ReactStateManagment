@@ -1,10 +1,9 @@
-import React, {useState, useContext} from 'react';
+import React, {useContext} from 'react';
 
 import { ListGroup } from 'reactstrap';
 
-import { MovieContext } from './../MovieContext/MovieContext';
-import Movie from './../Movie/Movie';
-import Nav from './../Nav/Nav';
+import { MovieContext } from './../MovieContext';
+import { MovieItem } from './../MovieItem';
 
 const MovieList = () => {
 	const [movies,setMovies] = useContext(MovieContext);
@@ -15,7 +14,7 @@ const MovieList = () => {
 			<ListGroup>
 			{movies.map(movie=>{
 				//return <li>{movie.name}</li>
-				return <Movie key={movie.id} name={movie.name} price={movie.price}/>
+				return <MovieItem key={movie.id} name={movie.name} price={movie.price}/>
 				})
 			}
 			</ListGroup>

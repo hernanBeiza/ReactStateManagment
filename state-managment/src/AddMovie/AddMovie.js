@@ -1,10 +1,9 @@
 import React, {useState, useContext, useEffect} from 'react';
 import PropTypes from 'prop-types';
 
-import { Col, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Col, Button, Form, FormGroup, Input } from 'reactstrap';
 
-import Movie from './../Movie/Movie';
-import { MovieContext } from './../MovieContext/MovieContext';
+import { MovieContext } from './../MovieContext';
 
 const AddMovie = () => {
 	const [movies,setMovies] = useContext(MovieContext);

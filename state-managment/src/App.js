@@ -1,14 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import { Container } from 'reactstrap';
 
 import { MovieProvider } from './MovieContext/MovieContext';
 
-import Nav from './Nav/Nav';
+import { Nav } from './Nav';
 import MovieList from './MovieList/MovieList';
-import AddMovie from './AddMovie/AddMovie';
+import { AddMovie } from './AddMovie';
 
 function App() {
   return (
